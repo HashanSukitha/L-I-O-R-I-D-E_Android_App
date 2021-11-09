@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.lioride.lioride.Menu">
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lioride_logo"
+        android:alpha="0.60"/>
+
+    <Button
+        android:id="@+id/logInButton"
+        android:layout_width="160dp"
+        android:layout_height="139dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="148dp"
+        android:alpha="0.80"
+        android:background="@drawable/rounded_button"
+        android:shadowColor="#290202"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="On/off"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toEndOf="@+id/renameButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/renameButton"
+        android:layout_width="160dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="148dp"
+        android:background="@drawable/rounded_button"
+        android:shadowColor="#290202"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Rename"
+        android:textColor="#ffffff"
+
+
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/conDicon"
+        android:layout_width="160dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="84dp"
+        android:alpha="0.80"
+        android:background="@drawable/rounded_button"
+        android:shadowColor="#290202"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Connect Disconnect"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/renameButton" />
+
+    <Button
+        android:id="@+id/userSettingsButton"
+        android:layout_width="160dp"
+        android:layout_height="139dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginTop="84dp"
+        android:alpha="0.80"
+        android:background="@drawable/rounded_button"
+        android:shadowColor="#290202"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="User Settings"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logInButton" />
+
+    <Button
+        android:id="@+id/logButton"
+        android:layout_width="160dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="76dp"
+        android:alpha="0.80"
+        android:background="@drawable/rounded_button"
+        android:shadowColor="#290202"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Log"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conDicon" />
+
+    <Button
+        android:id="@+id/showBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="104dp"
+        android:layout_marginRight="104dp"
+        android:layout_marginTop="68dp"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exitButton" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="160dp"
+        android:layout_height="139dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginTop="76dp"
+        android:alpha="0.80"
+        android:background="@drawable/rounded_button"
+        android:elevation="0dp"
+        android:shadowColor="#290202"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="EXIT"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userSettingsButton" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="240dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="64dp"
+        android:background="#ffffff"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/showBtn"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logButton" />
+
+</android.support.constraint.ConstraintLayout>
